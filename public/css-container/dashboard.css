@@ -1,0 +1,279 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+textarea {
+    resize: none;
+  }
+.home_main_box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 40px 0;
+    justify-content: space-around;
+}
+.profile_box{
+    width: 30%;
+    min-width: 250px;
+    height: 570px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px 1px rgba(156, 156, 156, 0.2), 0 6px 20px 0 rgba(158, 158, 158, 0.19);
+    border-radius: 10px;
+    overflow: hidden !important;
+}
+.profile_img_div{
+    width: 100%;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile_info{
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+.attendence_text::after{
+    content: "Overall";
+    font-size: 14px;
+    position: absolute;
+    transform: translate(-30px, 30px);
+    color: red;
+}
+.lecture_attend::after{
+    content: "Attend";
+    font-size: 14px;
+    position: absolute;
+    transform: translate(-30px, 30px);
+    color: red;
+}
+.profile_box .checked{
+    color: orange;
+}
+.profile_img_div img{
+    transform: translateY(20px);
+    z-index: 2;
+    border-radius: 50%;
+    background-color: #ffffff;
+    padding: 5px;
+    box-shadow: 0 0 10px 1px rgba(156, 156, 156, 0.2), 0 6px 20px 0 rgba(158, 158, 158, 0.19);
+}
+.other_cont_box{
+    width: 65%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.attend_class_box{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+.message_table{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    /* background-color: blueviolet; */
+}
+.attendence_box{
+    /* margin-top: 10px; */
+    width: 45%;
+    min-width: 300px;
+    height: 130px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 1px rgba(156, 156, 156, 0.2), 0 6px 20px 0 rgba(158, 158, 158, 0.19);
+    border-radius: 10px;
+}
+.sub_table{
+    width: 45%;
+}
+.message_box{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.messageInformationBox{
+    max-width: 900px;
+    height: 95%;
+    box-shadow: 0 0 10px 1px rgba(156, 156, 156, 0.2), 0 6px 20px 0 rgba(158, 158, 158, 0.19);
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.messageInformationBox header{
+    width: 100%;
+    height: 60px;
+    background-image: radial-gradient(#56f583 30%, #32ed67 70%);
+    text-align: center;
+    padding-top: 14px;
+    border-bottom: 1px solid grey;
+    color: #4961e9;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.messageInformationBox header > span{
+    display: block;
+    width: 0%;
+    margin: 0px auto 0 auto;
+    border: 2px solid rgb(154, 154, 154);
+    transition: 0.5s ease-out;
+}
+.messageInformationBox:hover header > span{
+    width: 100%;
+}
+.messageInformationBox div{
+    width: 100%;
+    display: block;
+    height: 100%;
+    min-height: 80px;
+    overflow: hidden auto;
+    justify-content: center;
+    align-items: center;
+}
+.messageInformationBox div .messageBox{
+    width: 92%;
+    height: auto;
+    padding: 10px 10px;
+    display: flex;
+    margin: 15px auto;
+    border-radius: 7px;
+    background-color: rgb(230, 230, 230);
+}
+.messageInformationBox div .messageBox .messageBoxImage{
+    width: 88px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    overflow: hidden;
+    margin-right: 6px;
+}
+.messageInformationBox div .messageBox .messageBoxContent{
+    width: 100%;
+    height: auto;
+    border-radius: 7px;
+    padding: 10px 10px;
+    background-color: aqua;
+}
+ ::-webkit-scrollbar {
+    width: 7px;
+}
+ ::-webkit-scrollbar-thumb {
+    background: rgb(227, 227, 227);
+    border-radius: 20px;
+    height: 100px;
+}
+.button_post{
+    width: 92%;
+    box-shadow: 0 0 10px 1px rgba(156, 156, 156, 0.2), 0 6px 20px 0 rgba(158, 158, 158, 0.19);
+    margin-bottom: 20px;
+}
+.messageInformationBox .time_box{
+    width: 100%;
+    height: 50px;
+    margin: 0 !important;
+    display: flex;
+    overflow: hidden;
+}
+.messageInformationBox .subject_index_box{
+    width: 95%;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden auto;
+    padding: 10px 0;
+    margin: 0 !important;
+}
+.messageInformationBox .subject_index_box .lecture_info1{
+    width: 92%;
+    min-height: 100px;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 5px 10px;
+    margin: 10px auto;
+    box-shadow: 0 0 10px 1px rgba(156, 156, 156, 0.2), 0 6px 20px 0 rgba(158, 158, 158, 0.19);
+}
+.messageInformationBox .subject_index_box .lecture_info1 .upcoming_class{
+    margin-bottom: 5px; 
+    display: flex; 
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(183, 183, 183, 0.516);
+}
+.messageInformationBox .time_box .time_text{
+    width: 50%;
+    line-height: 0.1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 4px 20px;
+}
+@media only screen and (max-width: 1400px) {
+    .messageInformationBox{
+        min-width: 74%;
+    }
+    .messageInformationBox header{
+        padding-top: 17px;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .home_main_box{
+        flex-direction: column;
+    }
+    .profile_box{
+        margin-top: 40px;
+        width: 90%;
+    }
+    .other_cont_box{
+        width: 95%;
+        margin: 20px auto;
+    }
+    .attend_class_box{
+        padding: 15px 0;
+    }
+} 
+@media only screen and (max-width: 700px) {
+    .messageInformationBox{
+        width: 98%;
+    }
+    .other_cont_box{
+        width: 100%;
+    }
+    .attend_class_box{
+        flex-direction: column;
+    }
+    .attendence_box{
+        width: 90%;
+        margin: auto;
+    }
+    .attendence_box:nth-child(1){
+        margin-bottom: 25px;
+    }
+    .attend_class_box .attendence_box:nth-child(2) span{
+        margin-bottom: 8px;
+    }
+    .other_cont_box .message_table{
+        flex-direction: column;
+        height: auto;
+    }
+    .other_cont_box .message_table .message_box{
+        width: 100%;
+    }
+    .other_cont_box .message_table .message_box div{
+        margin: 20px;
+    }
+    .other_cont_box .message_table .message_box{
+        margin-bottom: 13px;
+    }
+}
+/* 7417724608 */
